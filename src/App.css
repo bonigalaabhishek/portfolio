@@ -1,0 +1,25 @@
+#root {
+  width: 100%;
+   margin: 0;
+  padding: 0;
+ 
+  background-color: rgb(10, 2, 2);
+  background-size: cover;
+ 
+overflow: hidden;
+ 
+}
+ 
+#cursor{
+  height: 32px;
+  width: 32px;
+  background-color: rgba(255, 255, 255, 0.897);
+  border-radius: 50%;
+  position: fixed;
+  top:0;
+  left:0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 100;
+ 
+}

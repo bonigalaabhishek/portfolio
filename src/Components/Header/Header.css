@@ -1,0 +1,133 @@
+.navbarheader {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 50px;
+    width: 100vw;
+    z-index: 9997;
+    mix-blend-mode: difference;
+    /* top: 1%; */
+    height: 40px;
+    background-color: rgba(250, 235, 215, 0.377);
+  }
+  .navbarheader nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+   
+  }
+   
+  /* .navbarheader nav ul li a.active {
+    border-bottom: 3px solid white;
+   
+  } */
+   
+  .navbarheader h2 a {
+    text-decoration: none;
+    color: white;
+    /* mix-blend-mode: difference; */
+  }
+   
+   
+   
+   
+  .navbarheader nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    /* mix-blend-mode: difference; */
+  }
+  .navbarheader nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+   
+  }
+   
+  .active-border {
+    position: absolute;
+    top:90%;
+    height: 3px;
+    background: white;
+    transition: left 0.5s, width 0.5s;
+    will-change: left, width;
+  }
+  .navbarheader nav i{
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+   
+   
+  @media  (max-width:800px) {
+    .navbarheader{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      position: fixed;
+      padding: 10px 20px;
+      width: 100%;
+      z-index: 9997;
+      mix-blend-mode: difference;
+      /* top: 1%; */
+    }
+   
+    .navbarheader nav ul{
+        display: none;
+       
+    }
+    .active-border {
+      display: none;
+    }
+    .navbarheader nav i{
+      opacity: 1;
+      display: block;
+     
+    }
+    .navbarheader sidebar {
+     
+      z-index: 9997;
+   
+    }
+   
+    .sidebar{
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: rgba(185, 185, 245, 0.473);
+      right: -100%;
+      backdrop-filter: blur(10px);
+      padding: 150px 50px;
+      top: 5%;
+      /* mix-blend-mode: darken; */
+    }
+   
+    .sidebar h4{
+      font-size: 50px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .sidebar i{
+        position: absolute;
+        /* right: 10%;
+        top: 5%; */
+        background-color: black;
+        border-radius: 50%;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        /* right: 12%;
+        top: 0%; */
+        right: 10%;
+        top: -5%;
+   
+    }
+  }
+  
